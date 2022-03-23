@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Curve25519 parameters"
+title: "Why those curve25519 parameters?"
 date: 2022-03-05
 mathjax: true
 ---
