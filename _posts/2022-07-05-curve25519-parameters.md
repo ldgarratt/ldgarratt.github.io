@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why those curve25519 parameters?"
-date: 2022-03-05
+date: 2022-07-05
 mathjax: true
 ---
 
@@ -39,7 +39,7 @@ essentially $8k$, and the factor of 8 is enough to ensure that the resulting
 shared secret, contained in the small subgroup (because it's just a bunch of
 additions of a point in the small subgroup), is ultimately some element in
 the small subgroup multiplied by 8, and thus the identity element by Lagrange's
-theorem. Of course, if your communication partner sends you a proper DH point in the large subgroup, then the shared secret will just end up being some multiple of $8 * 8 64$ in that large
+theorem. Of course, if your communication partner sends you a proper DH point in the large subgroup, then the shared secret will just end up being some multiple of $8$ in that large
 subgroup, as intended. It won't be the identity element because 8 (or $4$, or $2$ or $1$)
 is not the order of the subgroup, $r$ is.
 
@@ -63,7 +63,7 @@ because its form defines the golden ratio and is useful for Karatsuba
 multiplication.
 
 Other curves are a little unusual, such as Dual_EC obviously, or even secp256k1,
-whith $a = FFFFFFFF00000001000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFC$ and
+with $a = FFFFFFFF00000001000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFC$ and
 $b = 5AC635D8AA3A93E7B3EBBD55769886BC651D06B0CC53B0F63BCE3C3E27D2604B$.
 Meanwhile bitcoin's secp256k1 just uses $a = 0$, $b = 7$.
 
