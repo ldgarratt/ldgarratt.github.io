@@ -10,7 +10,7 @@ interesting. Let me summarise here.
 
 * Montgomery curve $M_A, B : By^2 = x^3 + Ax^2 + x$
 
-The Montgonery ladder arithmetic is very fast, also allowing for compressed
+The Montgomery ladder arithmetic is very fast, also allowing for compressed
 elliptic curve point (only the $x$ coordinate).
 
 * $A = 486662$
@@ -62,7 +62,7 @@ for the constants. For example, Curve448 chose the Solinas trinomial prime
 because its form defines the golden ratio and is useful for Karatsuba
 multiplication.
 
-Other curves are a little unusual, such as Dual_EC obviously, or even secp256k1,
+Other curves are a little unusual, such as Dual_EC obviously, or even secp256r1,
 with $a = FFFFFFFF00000001000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFC$ and
 $b = 5AC635D8AA3A93E7B3EBBD55769886BC651D06B0CC53B0F63BCE3C3E27D2604B$.
 Meanwhile bitcoin's secp256k1 just uses $a = 0$, $b = 7$.
