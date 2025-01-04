@@ -27,7 +27,7 @@ clarify, the goal is to transfer this money into cash, and from there I will
 assume there are normal ways to launder physical cash (for example, by starting
 a business whose customers primarily pay in cash).
 
-## 1. Lay low for awhile.
+## 1. Lay low for awhile
 It is obviously tempting to try to launder and then spend this money quickly,
 but a heist of several billion in bitcoin is obviously going to have a lot of people
 investigating. The prudent move is lay low for a long time until interest in the
@@ -39,7 +39,7 @@ on the bitcoin addresses it does not matter what you do with them in the future.
 Consider moving to a country which does not cooperate with the authorities that
 are looking for you.
 
-## 2. Shut up.
+## 2. Shut up
 
 This should pretty much go without saying, but it's actually surprisingly hard
 for many people. The Grugq has an interesting talk on this. The
@@ -58,7 +58,7 @@ not say anything to the authorities without speaking to your lawyer first. This 
 Or, to summarise humorously:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6EI_RYIEtrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 3. Remove the evidence.
+## 3. Remove the evidence
 
 The evidence taken from the hack is always going to be there. The authorities
 already have it so there is not much we can do about that. But my partner and I do have access to the seed to the wallet containing the stolen bitcoin. This evidence must not ever be found and should definitely not be saved on some hard drive somewhere. So I would destroy this evidence. I would consider splitting this secret up into several, such that it does not exist in one place, and each individual share, on its own, is meaningless. We can do this with [Shamir Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing). I've even written code for it [here](https://github.com/ldgarratt/shamir). We could even do something like [threshold cryptography](https://en.wikipedia.org/wiki/Threshold_cryptosystem), whereby the key to sign transactions no longer exists in one part, and both of us would have to combine to sign individual transactions. These shares will be stored on an encrypted USB.
